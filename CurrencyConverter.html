@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div id="container" class="w-full h-screen bg-[#f1dfb2] flex justify-center items-center">
+        <div class="bg-white w-96 h-[410px] px-9 py-8 rounded-2xl">
+            <h2 class="text-2xl font-bold">Currency Converter</h2>
+            <form action="">
+                <div class="amount py-6"> 
+                    <p class="font-semibold">Enter Amount :</p>
+                    <input id="inp" type="text" value="1" class="border-2 border-slate-300 p-2 my-1 w-80 rounded-lg">
+                </div>
+    
+                <div class="dropdown convertion flex justify-center items-center">
+                    <div class="from  mr-10">
+                        <p class="font-semibold pb-1">From</p>
+                        <div class="box flex justify-center items-center border-2 border-slate-300 rounded-lg">
+                            <img src="https://flagsapi.com/US/flat/64.png" class="h-8 pl-1">
+                            <select name="from" class=""></select>
+                        </div>
+                    </div>
+        
+                    <i class="fa-solid fa-arrow-right-arrow-left text-2xl pt-6"></i>
+        
+                    <div class="to  ml-10">
+                        <p class="font-semibold pb-1">To</p>
+                        <div class="box flex justify-center items-center border-2 border-slate-300 rounded-lg"">
+                            <img src="https://flagsapi.com/BD/flat/64.png" class="h-8 pl-1">
+                            <select name="to" class=""></select>
+                        </div>
+                    </div>
+                </div>
+    
+                <p id="msg" class="py-6 font-semibold text-center">1USD = 117.4619TK</p>
+                <button id="btn" class="bg-[#963c82] text-white font-semibold p-2 my-2 w-80 rounded-lg">Get Exchange Rate</button>
+            </form>
+        </div>
+    
+    </div>
+
+
+    <script src="List.js"></script>
+    <script src="CurrencyConverter.js"></script>
+</body>
+</html>
